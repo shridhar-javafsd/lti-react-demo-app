@@ -1,19 +1,25 @@
-// convert to arrow function 
+
+//  arrow function 
 
 const App = () => {
+
+  const num = 10;
+  const firstName = 'Sonu';
 
   return (
     <div>
       <h1>LTI React App</h1>
       <p>Welcome to LTI demo react application.</p>
+      <p> {num} </p>
+      <p> {firstName} </p>
+      <p> {10 + num} </p>
     </div>
   );
-
 }
 
 export default App;
 
-
+// old JS function 
 
 // function App() {
 
