@@ -1,6 +1,6 @@
 // convert to arrow function 
 
-function App() {
+const App = () => {
 
   return (
     <div>
