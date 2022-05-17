@@ -1,18 +1,20 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
+// bootstrap link - 
+// https://getbootstrap.com/docs/4.6/getting-started/introduction/ 
+
+
 const App = () => {
 
   return (
     <div className="container">
+      <Header />
       <div className="container mt-3 mb-3 pt-3 pb-3 shadow bg-white">
         <h1 className="display-4 text-primary">LTI React App</h1>
         <p>Welcome to LTI demo react application.</p>
       </div>
-
-      <Header />
       <Footer />
-
     </div>
   );
 }
