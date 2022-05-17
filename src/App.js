@@ -1,23 +1,41 @@
-
-//  arrow function 
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const App = () => {
-
-  const num = 10;
-  const firstName = 'Sonu';
 
   return (
     <div>
       <h1>LTI React App</h1>
       <p>Welcome to LTI demo react application.</p>
-      <p> {num} </p>
-      <p> {firstName} </p>
-      <p> {10 + num} </p>
+
+      <Header />
+      <Footer />
+
     </div>
   );
 }
- 
+
 export default App;
+
+
+// 
+// component 
+// state 
+// props 
+// JSX 
+
+//  arrow function 
+// const App = () => {
+
+//    return (
+//     <div>
+//       <h1>LTI React App</h1>
+//       <p>Welcome to LTI demo react application.</p>
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // old JS function 
 
