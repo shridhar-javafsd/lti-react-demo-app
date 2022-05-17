@@ -10,7 +10,6 @@ const App = () => {
   const fun = () => {
     alert('fun function invoked');
   }
-
   return (
     <div className="container">
       <div >
@@ -22,11 +21,9 @@ const App = () => {
         empData={emp}
         passFun={fun}
       />
-
     </div>
   );
 }
-
 export default App;
 
 
