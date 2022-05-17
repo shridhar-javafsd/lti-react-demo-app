@@ -3,6 +3,13 @@ import Footer from "./components/Footer";
 const App = () => {
 
   const num = 11;
+  const emp = {
+    eid: 101,
+    firstName: 'Sonu'
+  }
+  const fun = () => {
+    alert('fun function invoked');
+  }
 
   return (
     <div className="container">
@@ -10,7 +17,11 @@ const App = () => {
         <h1>App Component</h1>
         <p>Parent data in Parent: {num} </p>
       </div>
-      <Footer dataToPass={num} />
+      <Footer
+        dataToPass={num}
+        empData={emp}
+        passFun={fun}
+      />
 
     </div>
   );
