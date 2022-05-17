@@ -4,8 +4,8 @@ import Header from "./components/Header";
 const App = () => {
 
   return (
-    <div>
-      <h1>LTI React App</h1>
+    <div className="container">
+      <h1 className="display-4 text-primary">LTI React App</h1>
       <p>Welcome to LTI demo react application.</p>
 
       <Header />
