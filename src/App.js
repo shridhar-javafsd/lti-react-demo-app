@@ -10,16 +10,24 @@ const App = () => {
   const fun = () => {
     alert('fun function invoked');
   }
+
+  const getDataFromChild = (arg) => {
+    console.log(arg);
+  }
+
+
   return (
     <div className="container">
       <div >
         <h1>App Component</h1>
         <p>Parent data in Parent: {num} </p>
+        <p>Child data in Parent: {10} </p>
       </div>
       <Footer
         dataToPass={num}
         empData={emp}
         passFun={fun}
+        childToParent={getDataFromChild}
       />
     </div>
   );
