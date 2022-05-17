@@ -1,10 +1,15 @@
-const Footer = () => {
+
+const Footer = (props) => {
 
     return (
+
         <div>
             <h1>Footer Component</h1>
-            <p>Welcome to footer component.</p>
+            <p>Parent data in Child: {props.dataToPass}</p>
+
         </div>
+
+
     );
 }
 
