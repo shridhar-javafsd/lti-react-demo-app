@@ -1,16 +1,24 @@
 
+// state - 
 
+import { useEffect, useState } from "react";
 
 const EmployeeData = (props) => {
 
-    const eData = 25;
+    const [num, setNum] = useState(0); // number 
+    const [myName, setMyName] = useState(''); // string 
+    const [isIndian, setIsIndian] = useState(false); // boolean
+    const [phones, setPhones] = useState([]); // array
+    const [empObj, setEmpObj] = useState({}); // object 
+
+    useEffect();
 
     return (
         <div>
             <h1>Employee Component</h1>
-            <p>Parent data in Child: {props.dataToPass}</p>
-            <p>Child data in Child: {eData}</p>
-            <button onClick={props.passFun} >Click</button>
+            <p> {num} </p>
+            <p> {myName} </p>
+            <p> {isIndian} </p>
         </div>
     );
 }

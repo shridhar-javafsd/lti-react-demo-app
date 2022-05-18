@@ -30,18 +30,18 @@ const App = () => {
         <p>Parent data in Parent: {num} </p>
         <p>Child data in Parent: {dataFromChild} </p>
       </div>
-      <Footer
-        dataToPass={num}
-        empData={emp}
-        passFun={fun}
-        childToParent={getDataFromChild}
-      />
-      {/* <EmployeeData
+      {/* <Footer
         dataToPass={num}
         empData={emp}
         passFun={fun}
         childToParent={getDataFromChild}
       /> */}
+      <EmployeeData
+        dataToPass={num}
+        empData={emp}
+        passFun={fun}
+        childToParent={getDataFromChild}
+      />
     </div>
   );
 }
