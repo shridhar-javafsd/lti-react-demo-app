@@ -2,9 +2,9 @@ const Header = () => {
 
   return (
     <div>
-      <header class="header sticky-top">
-        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark text-muted">
-          <div class="container">
+      <header className="header sticky-top">
+        <nav className="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark text-muted">
+          <div className="container">
             <span className="navbar-brand" to="#">
               <img src="https://www.bisinfotech.com/wp-content/uploads/2020/02/LTI-Logo.jpg"
                 height="24px" alt="LTI" />
@@ -16,7 +16,6 @@ const Header = () => {
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item">
                   <span className="nav-span" to="#" > EmpData </span>
-
                 </li>
                 <li className="nav-item">
                   <span className="nav-span" to="#" > link2 </span>
