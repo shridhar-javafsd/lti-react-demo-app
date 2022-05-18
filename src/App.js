@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EmployeeData from "./components/EmployeeData";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const App = () => {
 
@@ -24,8 +25,9 @@ const App = () => {
 
 
   return (
-    <div className="container">
-      <div >
+    <div>
+      <Header />
+      <div className="container" >
         <h1>App Component</h1>
         <p>Parent data in Parent: {num} </p>
         <p>Child data in Parent: {dataFromChild} </p>
