@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <div>
       <header className="header sticky-top">
-        <nav className="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark text-muted">
+        <nav className="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
-            <Link className="navbar-brand" to="/home">
+            <Link className="navbar-brand" to="/">
               <img src="https://www.lntinfotech.com/wp-content/uploads/2017/06/LTI_Lets_solve.png"
                 height="24px" alt="LTI" />
             </Link>
@@ -17,13 +17,13 @@ const Header = () => {
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link className="nav-span" to="/emp" > EmpData </Link>
+                  <Link className="nav-link" to="/emp" > EmpData </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-span" to="/login" > Login </Link>
+                  <Link className="nav-link" to="/login" > Login </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-span" to="/register" > Register </Link>
+                  <Link className="nav-link" to="/register" > Register </Link>
                 </li>
               </ul>
             </div>

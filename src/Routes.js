@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
+import Page404 from './components/Page404';
 
 import EmployeeData from './components/EmployeeData';
 
@@ -22,6 +23,8 @@ const Routes = () => {
                             <Route path="/emp"> <EmployeeData/> </Route>
                             <Route path="/login"> <Login/> </Route>
                             <Route path="/register"> <Register/> </Route>
+                            <Route exact path="/"> <Home/> </Route>
+                            <Route path="/*"> <Page404/> </Route>
                         </Switch>
                     </div>
                     <Footer />
