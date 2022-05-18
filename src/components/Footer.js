@@ -4,6 +4,7 @@ const Footer = (props) => {
     const childNum = 20;
 
     const passDataToParent = () => {
+        console.log(`passDataToParent`);
         props.childToParent(childNum);
     }
 

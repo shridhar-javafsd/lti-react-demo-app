@@ -1,3 +1,5 @@
+import { useState } from "react";
+import EmployeeData from "./components/EmployeeData";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -7,12 +9,17 @@ const App = () => {
     eid: 101,
     firstName: 'Sonu'
   }
+
+  let [dataFromChild, setDataFromChild] = useState(0);
+
   const fun = () => {
+    console.log(`fun`);
     alert('fun function invoked');
   }
 
   const getDataFromChild = (arg) => {
-    console.log(arg);
+    console.log(`getDataFromChild`);
+    setDataFromChild(arg);
   }
 
 
@@ -21,7 +28,7 @@ const App = () => {
       <div >
         <h1>App Component</h1>
         <p>Parent data in Parent: {num} </p>
-        <p>Child data in Parent: {10} </p>
+        <p>Child data in Parent: {dataFromChild} </p>
       </div>
       <Footer
         dataToPass={num}
@@ -29,6 +36,12 @@ const App = () => {
         passFun={fun}
         childToParent={getDataFromChild}
       />
+      {/* <EmployeeData
+        dataToPass={num}
+        empData={emp}
+        passFun={fun}
+        childToParent={getDataFromChild}
+      /> */}
     </div>
   );
 }
