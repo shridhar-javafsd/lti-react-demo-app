@@ -1,53 +1,70 @@
-import { useState } from "react";
-import EmployeeData from "./components/EmployeeData";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Routes from "./Routes";
 
 const App = () => {
 
-  const num = 11;
-  const emp = {
-    eid: 101,
-    firstName: 'Sonu'
-  }
-
-  let [dataFromChild, setDataFromChild] = useState(0);
-
-  const fun = () => {
-    console.log(`fun`);
-    alert('fun function invoked');
-  }
-
-  const getDataFromChild = (arg) => {
-    console.log(`getDataFromChild`);
-    setDataFromChild(arg);
-  }
-
-
   return (
     <div>
-      <Header />
-      <div className="container" >
-        <h1>App Component</h1>
-        <p>Parent data in Parent: {num} </p>
-        <p>Child data in Parent: {dataFromChild} </p>
-      </div>
-      {/* <Footer
-        dataToPass={num}
-        empData={emp}
-        passFun={fun}
-        childToParent={getDataFromChild}
-      /> */}
-      <EmployeeData
-        dataToPass={num}
-        empData={emp}
-        passFun={fun}
-        childToParent={getDataFromChild}
-      />
+      <Routes />
     </div>
   );
 }
+
 export default App;
+
+
+
+
+
+// import { useState } from "react";
+// import EmployeeData from "./components/EmployeeData";
+// import Footer from "./components/Footer";
+// import Header from "./components/Header";
+
+// const App = () => {
+
+//   const num = 11;
+//   const emp = {
+//     eid: 101,
+//     firstName: 'Sonu'
+//   }
+
+//   let [dataFromChild, setDataFromChild] = useState(0);
+
+//   const fun = () => {
+//     console.log(`fun`);
+//     alert('fun function invoked');
+//   }
+
+//   const getDataFromChild = (arg) => {
+//     console.log(`getDataFromChild`);
+//     setDataFromChild(arg);
+//   }
+
+
+//   return (
+//     <div>
+//       <Header />
+//       <div className="container" >
+//         <h1>App Component</h1>
+//         <p>Parent data in Parent: {num} </p>
+//         <p>Child data in Parent: {dataFromChild} </p>
+//       </div>
+//       {/* <Footer
+//         dataToPass={num}
+//         empData={emp}
+//         passFun={fun}
+//         childToParent={getDataFromChild}
+//       /> */}
+//       <EmployeeData
+//         dataToPass={num}
+//         empData={emp}
+//         passFun={fun}
+//         childToParent={getDataFromChild}
+//       />
+//     </div>
+//   );
+// }
+// export default App;
 
 
 // import Footer from "./components/Footer";
