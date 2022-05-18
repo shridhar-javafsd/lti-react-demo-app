@@ -27,8 +27,8 @@ const EmployeeData = (props) => {
     }, []);
 
     return (
-        <div>
-            <h1>Employee Component</h1>
+        <div className="container">
+            <p className="display-4 text-primary">Employee component</p>
             <p> {num} </p>
             <p> {myName} </p>
             <p> {isIndian} </p>

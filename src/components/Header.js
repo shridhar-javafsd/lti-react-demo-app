@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
 
   return (
@@ -5,23 +7,23 @@ const Header = () => {
       <header className="header sticky-top">
         <nav className="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark text-muted">
           <div className="container">
-            <span className="navbar-brand" to="#">
-              <img src="https://www.bisinfotech.com/wp-content/uploads/2020/02/LTI-Logo.jpg"
+            <Link className="navbar-brand" to="/home">
+              <img src="https://www.lntinfotech.com/wp-content/uploads/2017/06/LTI_Lets_solve.png"
                 height="24px" alt="LTI" />
-            </span>
+            </Link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <span className="nav-span" to="#" > EmpData </span>
+                  <Link className="nav-span" to="/emp" > EmpData </Link>
                 </li>
                 <li className="nav-item">
-                  <span className="nav-span" to="#" > link2 </span>
+                  <Link className="nav-span" to="/login" > Login </Link>
                 </li>
                 <li className="nav-item">
-                  <span className="nav-span" to="#" > link3 </span>
+                  <Link className="nav-span" to="/register" > Register </Link>
                 </li>
               </ul>
             </div>
