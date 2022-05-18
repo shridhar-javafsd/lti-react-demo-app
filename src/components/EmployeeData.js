@@ -11,7 +11,20 @@ const EmployeeData = (props) => {
     const [phones, setPhones] = useState([]); // array
     const [empObj, setEmpObj] = useState({}); // object 
 
-    useEffect();
+    // useEffect(callback, array);
+    // useEffect(() => {}, []);
+
+    useEffect(() => {
+        setNum(5);
+        setMyName('Sonu');
+        setIsIndian(true);
+        setPhones([9876543210, 741850960]);
+        setEmpObj({
+            eid: 101,
+            firstName: 'Monu',
+            salary: 50000
+        });
+    }, []);
 
     return (
         <div>
@@ -19,6 +32,8 @@ const EmployeeData = (props) => {
             <p> {num} </p>
             <p> {myName} </p>
             <p> {isIndian} </p>
+            <p> {phones[0]} </p>
+            <p> {empObj.firstName} </p>
         </div>
     );
 }
