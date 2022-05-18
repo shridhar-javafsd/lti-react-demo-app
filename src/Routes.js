@@ -16,7 +16,7 @@ const Routes = () => {
             <BrowserRouter>
                 <div>
                     <Header />
-                    <div>
+                    <div style={{minHeight: '82vh'}} >
                         <Switch>
                             <Route path="/home"> <Home/> </Route>
                             <Route path="/emp"> <EmployeeData/> </Route>
@@ -24,6 +24,7 @@ const Routes = () => {
                             <Route path="/register"> <Register/> </Route>
                         </Switch>
                     </div>
+                    <Footer />
                 </div>
             </BrowserRouter>
         </div>
