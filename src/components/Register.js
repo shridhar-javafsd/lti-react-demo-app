@@ -20,10 +20,12 @@ const Register = () => {
         });
     }
 
-    // const submitUser = (evt) => {
-    //     setUserName();
-    //     evt.preventDefault();
-    // }
+    const submitUser = (evt) => {
+        alert('Data entered!');
+        // code 
+        // setUserName();
+        evt.preventDefault();
+    }
 
     return (
         <div className="container">
@@ -35,17 +37,18 @@ const Register = () => {
                             type="text"
                             id="userName"
                             name="userName"
-                            className="form-control mb-3"
                             value={userData.userName}
+                            className="form-control mb-3"
                             onChange={handleUser}
                             placeholder="Enter username"
+                            autoFocus
                         />
                         <input
                             type="password"
                             id="password"
                             name="password"
-                            className="form-control mb-3"
                             value={userData.password}
+                            className="form-control mb-3"
                             onChange={handleUser}
                             placeholder="Enter password"
                         />
@@ -54,7 +57,7 @@ const Register = () => {
                             id="submit"
                             className="form-control mb-3 btn btn-success"
                             value="Register"
-                            onClick={(e) => { alert('done!'); }}
+                            onClick={submitUser}
                         />
                     </div>
                 </form>
