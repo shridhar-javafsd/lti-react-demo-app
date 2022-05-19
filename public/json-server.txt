@@ -1,0 +1,49 @@
+
+json-server guide - https://www.npmjs.com/package/json-server
+
+*** create a saperate json-server ***
+(not related to this app)
+
+1. open CMD. 
+
+2. on any drive create a folder -  
+
+mkdir backend
+
+3. create a json file 
+
+type nul > db.json
+
+4. open this file
+
+db.json 
+
+5. write some json data in that file. 
+
+{
+    "users": [
+        {
+            "userName": "anil",
+            "password": "anil",
+            "phone": "7777",
+            "id": 1
+        },
+        {
+            "userName": "aaa",
+            "password": "aaa",
+            "phone": "777",
+            "id": 2
+        }
+    ]
+}
+
+
+6. install json-server globally 
+
+npm i -g json-server
+
+7. run this server 
+
+json-server -p 9999 -w db.json
+
+8. start using register component in react app. 

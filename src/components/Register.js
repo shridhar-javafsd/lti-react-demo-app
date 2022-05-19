@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 // axios guide - https://www.npmjs.com/package/axios 
 // json-server guide - https://www.npmjs.com/package/json-server
+// quick guide - json-server.txt file in public folder 
 
 const Register = () => {
 
