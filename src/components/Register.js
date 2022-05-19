@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+// axios guide - https://www.npmjs.com/package/axios 
+// json-server guide - https://www.npmjs.com/package/json-server
+
 const Register = () => {
 
     const [userData, setUserData] = useState({});
@@ -23,28 +26,15 @@ const Register = () => {
     }
 
     const submitUser = (evt) => {
-        // get - get data , post - send data 
-        // axios.post(``, obj );
-        console.log(JSON.stringify(userData));
 
-        axios.post('data.json', userData )
+        axios.post('http://localhost:9999/users/', userData)
             .then((response) => {
-                alert(response.data);
+                alert(response.data.userName);
             })
             .catch((error) => {
                 alert(error.message);
             });
 
-        // axios.get('data.json')
-        //     .then((response) => {
-        //         alert(response.data.eid);
-        //     })
-        //     .catch((error) => {
-        //         alert(error.message);
-        //     });
-
-
-        setDisplayUserName(userData.userName);
         evt.preventDefault();
     }
 
