@@ -27,13 +27,21 @@ const Register = () => {
         // axios.post(``, obj );
         console.log(JSON.stringify(userData));
 
-        axios.post(`./lti-data.json`, JSON.stringify(userData))
+        axios.post('data.json', userData )
             .then((response) => {
                 alert(response.data);
             })
             .catch((error) => {
                 alert(error.message);
             });
+
+        // axios.get('data.json')
+        //     .then((response) => {
+        //         alert(response.data.eid);
+        //     })
+        //     .catch((error) => {
+        //         alert(error.message);
+        //     });
 
 
         setDisplayUserName(userData.userName);
