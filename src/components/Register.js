@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const Register = () => {
 
     const [userData, setUserData] = useState({});
-    // const [userName, setUserName] = useState('');
+    const [displayUserName, setDisplayUserName] = useState('');
 
     useEffect(() => {
         setUserData({
@@ -21,9 +21,7 @@ const Register = () => {
     }
 
     const submitUser = (evt) => {
-        alert('Data entered!');
-        // code 
-        // setUserName();
+        setDisplayUserName(userData.userName);
         evt.preventDefault();
     }
 
@@ -65,6 +63,7 @@ const Register = () => {
             <div className="col-4 bg-white shadow mt-3 mb-3 pt-3 pb-3">
                 <p className="lead text-primary">Registered User Data</p>
                 <p>{userData.userName}</p>
+                <p>{displayUserName}</p>
             </div>
         </div>
     );
