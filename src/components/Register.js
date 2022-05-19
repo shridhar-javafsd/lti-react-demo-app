@@ -25,8 +25,9 @@ const Register = () => {
     const submitUser = (evt) => {
         // get - get data , post - send data 
         // axios.post(``, obj );
+        console.log(JSON.stringify(userData));
 
-        axios.post(`./lti-data.json`, userData)
+        axios.post(`./lti-data.json`, JSON.stringify(userData))
             .then((response) => {
                 alert(response.data);
             })
