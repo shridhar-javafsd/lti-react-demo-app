@@ -8,9 +8,8 @@ const Login = () => {
 
     useEffect(() => {
         setUserData({
-            userName: '',
-            password: '',
-            phone: ''
+            userId: '',
+            password: ''
         });
     }, []);
 
@@ -24,13 +23,12 @@ const Login = () => {
 
     const submitUser = (evt) => {
 
-        axios.get('http://localhost:9999/users/')
+        axios.get(`http://localhost:9999/users/${userData.userId}`)
             .then((response) => {
-                // logic to find registered user 
-                alert(response.data.userName);
+                alert(`Login successful for userId ${response.data.id} and userName ${response.data.userName}!`);
             })
             .catch((error) => {
-                alert(error.message);
+                alert(`${error.message} : wrong credentials!`);
             });
 
         evt.preventDefault();
@@ -43,13 +41,13 @@ const Login = () => {
                 <form className="form form-group" >
                     <div>
                         <input
-                            type="text"
-                            id="userName"
-                            name="userName"
-                            value={userData.userName}
+                            type="number"
+                            id="userId"
+                            name="userId"
+                            value={userData.userId}
                             className="form-control mb-3"
                             onChange={handleUser}
-                            placeholder="Enter username"
+                            placeholder="Enter userId"
                             autoFocus
                         />
                         <input
