@@ -15,7 +15,7 @@ const EmpSlice = createSlice(
             state.empData = action.payload;
         }
     }
-);
+); 
 
 export const { } = EmpSlice.actions;
 export default EmpSlice.reducer;
