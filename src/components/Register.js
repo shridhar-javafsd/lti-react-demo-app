@@ -30,6 +30,7 @@ const Register = () => {
 
         axios.post('http://localhost:9999/users/', userData)
             .then((response) => {
+                setUserData(response.data);
                 alert(`User ${response.data.userName} with id ${response.data.id} registered successfully.`);
             })
             .catch((error) => {
@@ -87,6 +88,7 @@ const Register = () => {
                 <p className="lead text-primary">Registered User Data</p>
                 <p>{userData.userName}</p>
                 <p>{userData.phone}</p>
+                <p>{userData.id}</p>
                 <p>{displayUserName}</p>
             </div>
         </div>
