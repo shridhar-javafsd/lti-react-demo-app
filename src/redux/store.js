@@ -1,4 +1,4 @@
-
+import  empReducer  from './EmpSlice';
 // steps to use redux 
 // 1. create store (only one)
 // 2. provide the store to index.js
@@ -10,7 +10,7 @@ import { configureStore } from "@reduxjs/toolkit";
 
 console.log(`store initilized...`);
 
-const store = configureStore( 
+const store = configureStore(
     {
         reducer: {
             emp: empReducer
