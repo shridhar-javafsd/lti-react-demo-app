@@ -9,7 +9,7 @@ import  empReducer  from './EmpSlice';
 import { configureStore } from "@reduxjs/toolkit";
 
 console.log(`store initilized...`);
-
+ 
 const store = configureStore(
     {
         reducer: {
